@@ -38,7 +38,6 @@ int main(void) {
 	int flagPreciosIngresados = 0;
 	int flagCalculosRealizados = 0;
 
-
 	do {
 		printf("Menu de opciones\n\n");
 		printf("1. Ingresar Kilometros: %.2f\n", kilometrosIngresados);
@@ -92,8 +91,6 @@ int main(void) {
 				    	precioPorKmAerolineas = 0;
 				    	precioPorKmLatam = 0;
 				    }
-
-
 				    if (precioIngresadoAerolineas > precioIngresadoLatam){
 				    diferenciaDePrecios = precioIngresadoAerolineas - precioIngresadoLatam;
 				      } else {
