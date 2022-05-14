@@ -42,7 +42,7 @@ int main(void) {
 			} else {
 				printf("Pasajero no cargado.\n");
 			}
-			//listarPasajero(pasajeros, LEN_PASAJEROS);
+			listarPasajero(pasajeros, LEN_PASAJEROS);
 			break;
 		}
 
