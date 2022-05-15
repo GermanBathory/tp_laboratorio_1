@@ -9,11 +9,11 @@
 
 #ifndef BIBLIOTECA_UTN_H_
 #define BIBLIOTECA_UTN_H_
+#include "arrayPassenger.h"
 
-
+int listarPasajero (Passenger pArray[], int len);
 int utnGetInt(int *pNumeroIngresado, char *mensaje, char *mensajeError,
 		int maximo, int minimo, int maximoDeReintentos);
-
 float utnGetFloat(float *pNumeroIngresado, char *mensaje, char *mensajeError,
 		int maximo, int minimo, int maximoDeReintentos);
 

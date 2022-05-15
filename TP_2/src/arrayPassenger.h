@@ -15,14 +15,16 @@ typedef struct {
 	float price;
 	char flycode[10];
 	int typePassenger;
+	int statusFlight;
 	int isEmpty;
 } Passenger;
 
 int initPassenger(Passenger pArray[], int len);
-int incrementarId();
-int buscarIndexPorIsEmpty(Passenger pArray[], int len);
 int addPassenger(Passenger pArray[], int len);
+int findPassengerById(Passenger listPasajeros[], int len, int idPass);
+int removePassenger(Passenger listPasajeros[], int len, int idPass);
+int buscarIndexPorIsEmpty(Passenger pArray[], int len);
 void mostrarPasajero(Passenger unPasajero);
-int listarPasajero (Passenger pArray[], int len);
+int modificarPasajero(Passenger listPasajeros[], int len, int idPass);
 
 #endif /* ARRAYPASSENGER_H_ */

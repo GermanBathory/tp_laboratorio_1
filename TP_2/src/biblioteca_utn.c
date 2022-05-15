@@ -5,6 +5,18 @@
  *      Author: Ger
  */
 #include "biblioteca_utn.h"
+#include "arrayPassenger.h"
+
+int listarPasajero(Passenger pArray[], int len) {
+	int retorno = -1;
+	if (pArray != NULL && len > 0) {
+		for (int i = 0; i < len; i++) {
+			mostrarPasajero(pArray[i]);
+		}
+		retorno = 0;
+	}
+	return retorno;
+}
 
 int utnGetInt(int *pNumeroIngresado, char *mensaje, char *mensajeError,
 		int maximo, int minimo, int maximoDeReintentos) {
